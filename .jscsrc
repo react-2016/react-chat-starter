@@ -1,0 +1,11 @@
+{
+  "preset": "google",
+  "validateIndentation": 4,
+  "maximumLineLength": 120,
+  "requireDotNotation": {"allExcept": ["snake_case"]},
+  "esnext": true,
+  "validateQuoteMarks": false,
+  "jsDoc": {
+    "checkAnnotations": "jsdoc3"
+  }
+}
