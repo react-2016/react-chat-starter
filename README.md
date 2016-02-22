@@ -4,6 +4,5 @@
 
 ```
 $ npm install
-$ ./node_modules/gulp/bin/gulp.js vendor
 $ npm run build -- --watch --port 3000
 ```

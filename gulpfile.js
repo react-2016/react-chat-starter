@@ -27,7 +27,7 @@ gulp.task('default:html', function() {
     runSequence(['htmlinclude', 'spritesmith'], 'imageresize', 'scsslint', 'sass');
 });
 
-gulp.task('default', ['default:script', 'default:html'], function(watch) {
+gulp.task('default', ['vendor', 'default:script', 'default:html'], function(watch) {
     if (watch) {
         gulp.watch('html/**/*.html', ['htmlinclude']);
         gulp.watch('scss/**/*.scss', ['sass']);
