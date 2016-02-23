@@ -2,7 +2,7 @@ import Firebase from 'firebase';
 
 export default class Firechat {
     constructor(appId, options) {
-        this._firebase = typeof appId !== 'string' ?
+        this._firebase = typeof appId !== 'object' ?
             new Firebase(appId || 'https://amber-inferno-4139.firebaseio.com/') :
             appId;
 
